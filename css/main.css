@@ -3,6 +3,8 @@
 @import 'favourite.css';
 @import 'quality.css';
 @import 'service.css';
+@import 'workers.css';
+
 
 * {
 	font-family: 'Manrope', sans-serif;
