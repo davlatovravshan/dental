@@ -1,0 +1,143 @@
+.header {
+	box-shadow: 0px 1px 0px #E5E9F2;
+	background: #fff;
+}
+.header-parent {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 72px;
+}
+
+.nav {}
+.nav-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-link {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	font-feature-settings: 'liga' off;
+	color: #18191F;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 10px;
+}
+
+.logo {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+}
+.logo-img {}
+
+.social {}
+.social-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.social-link {
+	color: #0096FF;
+	padding: 8px 12px;
+	background: rgba(128, 202, 255, 0.1);
+	border-radius: 50%;
+	margin: 0 7px;
+	font-size: 16px;
+}
+
+.menu {
+	display: none;
+}
+
+.menu-burger {
+	border: none;
+	background: none;
+	position: relative;
+	display: inline-block;
+  	cursor: pointer;
+}
+
+.menu-span {
+	display: block;
+	width: 32px;
+	height: 2px;
+	background-color: #000;
+	margin: 7px 0;
+	transition: 0.4s;
+}
+
+.open-menu .span-1 {
+  transform: rotate(-45deg) translate(-7px, 7px);
+}
+.open-menu .span-2 {opacity: 0;}
+.open-menu .span-3 {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.header-sm {
+	transition: all 0.3s;
+	height: 0;
+	overflow: hidden;
+	background: #fff;
+}
+
+.header-sm.active {
+	box-shadow: 0px 1px 0px #E5E9F2;
+	padding: 15px 0;
+	height: auto;
+}
+
+.nav-sm {
+	margin: 0 20px;
+}
+
+.nav-list-sm {
+	justify-content: space-around;
+}
+
+.social-sm {
+	margin: 30px 20px 10px 20px;
+}
+
+.social-list-sm {
+	justify-content: center;
+}
+
+@media(max-width: 992px) {
+
+	.social-link {
+		font-size: 14px;
+	}
+
+}
+
+@media(max-width: 768px) {
+
+	.header-parent {
+		height: 55px;
+	}
+
+	.menu {display: block;}
+
+	.nav {display: none;}
+	.social {display: none;}
+
+	.logo {
+		position: static;
+		transform: none;
+		margin-right: 30px;
+	}
+
+}
+
+@media(max-width: 576px) {
+	.menu-span {
+		width: 27px;
+	}
+}
