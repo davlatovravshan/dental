@@ -1,6 +1,6 @@
 #banner {
 	position: relative;
-	padding: 50px 0;
+	padding: 30px 0;
 }
 
 .banner-parent {
@@ -10,6 +10,8 @@
 }
 
 .banner-info {
+	padding: 0 10px;
+	margin-right: 20px;
 	width: 550px;
 }
 .banner-info-parent {}
@@ -19,8 +21,9 @@
 	color: #0096FF;
 }
 .banner-title {
+	margin: 20px 0;
 	font-weight: 900;
-	font-size: 40px;
+	font-size: 36px;
 	line-height: 42px;
 	color: #18191F;
 }
@@ -29,15 +32,16 @@
 	line-height: 32px;
 }
 .banner-button {
+	margin: 20px 0;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 30px;
 	text-align: center;
 }
 
 .main-btn {
 	color: #fff;
-	padding: 17px 32px;
+	padding: 13px 25px;
 	background: #0096FF;
 	border-radius: 10px;
 	font-weight: bold;
@@ -79,3 +83,116 @@
 		top: -50%;
 	}
 }*/
+
+.info-block {
+	background: #F0F6FB;
+	padding: 60px 20px;
+}
+
+.info-block-title h2 {
+	font-weight: 500;
+	font-size: 29px;
+	line-height: 33px;
+	text-align: center;
+	color: #0096FF;
+}
+
+.info-block-title span {
+	font-weight: 800;
+}
+
+
+@media (min-width: 1200px) {
+	.banner-title {
+		font-size: 42px;
+	}
+}
+
+@media(max-width: 992px) {
+
+	#banner {
+		position: relative;
+		padding: 30px 0;
+	}
+
+	.banner-circle {
+		width: 500px;
+		height: 500px;
+		right: -20%;
+		top: -20%;
+	}
+
+	.banner-img img {
+		max-width: 115%;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.banner-parent {
+		display: block;
+	}
+
+	.info-block {
+		padding: 40px 15px;
+	}
+
+	.info-block-title h2 {
+		font-size: 24px;
+	}
+
+	.banner-info {
+		width: 530px;
+	}
+
+	.banner-img {
+		display: none;
+	}
+
+	.banner-circle {
+		width: 55%;
+		height: 100%;
+	}
+
+}
+
+@media(max-width: 576px) {
+
+	#banner {
+		padding: 20px 0;
+	}
+
+	.info-block {
+		padding: 30px 15px;
+	}
+
+	.banner-circle {
+		display: none;
+	}
+
+	.banner-info {
+		width: 100%;
+	}
+
+	.banner-pre-title {
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+
+	.banner-title {
+		margin-top: 10px;
+		font-size: 30px;
+	}
+
+	.banner-text {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.banner-button {
+		font-size: 16px;
+		padding: 7px 12px;
+	}
+
+}

@@ -1,8 +1,11 @@
 @import 'header.css';
 @import 'banner.css';
+@import 'favourite.css';
+@import 'quality.css';
 
 * {
 	font-family: 'Manrope', sans-serif;
+	font-weight: 500;
 	box-sizing: border-box;
 }
 
@@ -11,8 +14,17 @@ body, html {
 	overflow-x: hidden;
 }
 
+body {
+	position: relative;
+}
+
 ul { 
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 	padding: 0;
 }
@@ -27,20 +39,20 @@ button:focus, a:focus, input:focus {
 }
 
 .wrapper {
-	width: 1200px;
+	max-width: 1200px;
 	padding: 0 20px;
 	margin: 0 auto;
 }
 
 @media(min-width: 1500px) {
 	.wrapper {
-		width: 1450px;
+		max-width: 1450px;
 	}
 }
 
 @media(max-width: 1200px) {
 	.wrapper {
-		width: 992px;
+		max-width: 992px;
 	}
 }
 
