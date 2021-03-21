@@ -2,6 +2,7 @@
 @import 'banner.css';
 @import 'favourite.css';
 @import 'quality.css';
+@import 'service.css';
 
 * {
 	font-family: 'Manrope', sans-serif;
