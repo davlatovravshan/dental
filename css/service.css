@@ -1,9 +1,151 @@
-.service-title {}
-.service-title-bold {}
-.service-title-normal {}
-.service-parent {}
-.service-item {}
-.service-item-title {}
-.service-item-text {}
-.service-item-button {}
-.service-footer {}
+#service {
+	padding: 50px 0;
+}
+
+.service-title {
+	margin-bottom: 50px;
+	text-align: center;
+}
+.service-title-bold {
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 64px;
+	font-feature-settings: 'liga' off;
+	color: #000000;
+}
+.service-title-normal {
+	font-size: 36px;
+	line-height: 64px;
+	font-feature-settings: 'liga' off;
+	color: #000000;
+}
+.service-parent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.service-item {
+	flex-basis: calc(30% - 40px);
+	margin: 30px 0;
+}
+.service-item-title {
+	margin-bottom: 15px;
+}
+.service-item-title h3 {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+	font-feature-settings: 'liga' off;
+	color: #18191F;
+}
+.service-item-text {
+	margin-bottom: 40px;
+}
+.service-item-text p {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	font-feature-settings: 'liga' off;
+	color: #18191F;
+}
+.service-item-button button {
+	padding: 0;
+	cursor: pointer;
+	border: none;
+	background: none;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	font-feature-settings: 'liga' off;
+	color: #0096FF;
+}
+.service-footer {
+	padding: 30px 0;
+	text-align: center;
+}
+.service-footer button {
+	padding: 0;
+	cursor: pointer;
+	border: none;
+	background: none;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	font-feature-settings: 'liga' off;
+	color: #000000;
+}
+
+
+@media(max-width: 992px) {
+
+	.service-item {
+		flex-basis: calc(50% - 40px);
+	}
+
+}
+
+
+@media(max-width: 768px) {
+
+	.service-title {
+		margin-bottom: 30px;
+	}
+	.service-title-bold {
+		font-size: 30px;
+		line-height: 50px;
+	}
+	.service-title-normal {
+		font-size: 30px;
+		line-height: 50px;
+	}
+
+}
+
+@media(max-width: 576px) {
+
+	.service-parent {
+		justify-content: center;
+	}
+
+	.service-title-bold {
+		font-size: 24px;
+		line-height: 40px;
+	}
+	.service-title-normal {
+		font-size: 24px;
+		line-height: 40px;
+	}
+
+	.service-item {
+		flex-basis: 280px;
+		margin: 20px 0;
+	}
+
+	.service-item-title h3 {
+		font-size: 20px;
+	}
+
+	.service-item-text {
+		margin-bottom: 20px;
+	}	
+
+	.service-item-text p {
+		line-height: 24px;
+	}
+
+	.service-item:first-child {
+		margin-top: 10px;
+	}
+
+	.service-item:last-child {
+		margin-bottom: 10px;
+	}
+
+	.service-footer button {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+}
