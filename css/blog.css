@@ -67,11 +67,11 @@
 	margin-bottom: 10px;
 }
 .blog-info p {
-	height: 85px;
+	height: 125px;
 	overflow: hidden;
 	font-weight: normal;
-	font-size: 14px;
-	line-height: 21px;
+	font-size: 16px;
+	line-height: 24px;
 	color: #666666;
 }
 
@@ -103,7 +103,7 @@
 @media (max-width: 576px) {
 
 	.blog-item {
-		flex-basis: calc(100% - 10px);
+		flex-basis: 100%;
 	}
 
 	.blog-item {

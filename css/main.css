@@ -52,12 +52,10 @@ button:focus, a:focus, input:focus {
 	max-width: 1200px;
 	padding: 0 30px;
 	margin: 0 auto;
+	position: relative;
 }
 
 @media(min-width: 1500px) {
-	.wrapper {
-		max-width: 1450px;
-	}
 }
 
 @media(max-width: 1200px) {
