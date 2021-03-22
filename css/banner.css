@@ -162,6 +162,7 @@
 	}
 
 	.banner-circle {
+		opacity: 0.7;
 		width: 350px;
 	    right: -100px;
 	    height: 350px;
