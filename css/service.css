@@ -22,7 +22,7 @@
 	flex-wrap: wrap;
 }
 .service-item {
-	flex-basis: calc(30% - 40px);
+	flex-basis: calc(33% - 40px);
 	margin: 30px 0;
 }
 .service-item-title {

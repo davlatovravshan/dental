@@ -60,7 +60,7 @@
 
 	.workers-item {
 		margin: 20px 0;
-		flex-basis: calc(30% - 20px);
+		flex-basis: calc(33% - 10px);
 	}
 
 	.workers-item:last-child {

@@ -1,0 +1,118 @@
+#blog {
+	padding: 30px 0;
+}
+
+.blog-title h4 {
+	margin: 0 auto;
+	width: 540px;
+	max-width: 100%;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+	font-feature-settings: 'liga' off;
+	color: #18191F;
+}
+.main-title {}
+.blog-parent {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.blog-item {
+	flex-basis: calc(33% - 20px);
+	margin: 20px 0;
+}
+.blog-img {}
+.blog-img img {
+	width: 100%;
+	max-width: 100%;
+}
+.blog-img-info {
+	padding: 5px 0 10px 0;
+	display: flex;
+	align-items: center;
+}
+.blog-img-info h5 {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 22px;
+	color: #2296F9;
+}
+.blog-img-list {
+	margin-left: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.blog-img-item {
+	padding: 0 10px;
+}
+.blog-img-item > p, .blog-img-item > span, .blog-img-item > i {
+	font-size: 12px;
+	line-height: 18px;
+	color: #999999;
+}
+.blog-img-item > i {
+	font-weight: 500;
+	color: #2296F9;
+}
+.blog-info h4 {
+	height: 55px;
+	overflow: hidden;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 26px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+.blog-info p {
+	height: 85px;
+	overflow: hidden;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: #666666;
+}
+
+
+@media (max-width: 992px) {
+
+	.blog-item {
+		flex-basis: calc(50% - 25px);
+	}
+
+	.blog-item:last-child {
+	    margin: 20px auto;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.blog-item {
+		flex-basis: calc(90% - 30px);
+	}
+
+	.blog-item {
+	    margin: 20px auto;
+	}
+
+}
+
+@media (max-width: 576px) {
+
+	.blog-item {
+		flex-basis: calc(100% - 10px);
+	}
+
+	.blog-item {
+	    margin: 20px auto;
+	}
+
+	.blog-title h4 {
+	    font-size: 16px;
+	    line-height: 24px;
+	}
+
+}
